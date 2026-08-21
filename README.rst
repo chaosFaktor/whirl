@@ -9,7 +9,7 @@ This was a learning project I started after I looked at different actor framewor
 
 The only reason this is online is as reference material for my website and as part of my (also not production ready) webserver project.
 
-If you're looking for a more sophisticated alternative consider `kameo <https://github.com/tqwewe/kameo>`_ or `ractor <https://github.com/slawlor/ractor>`_.
+If you're looking for a more sophisticated alternative consider `kameo <https://github.com/tqwewe/kameo>`_, `ractor <https://github.com/slawlor/ractor>`_ or writing your own implementation using tokio.
 
 
 
