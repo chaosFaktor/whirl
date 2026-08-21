@@ -1,13 +1,15 @@
-Whirl -- A truly chaotic absolutely bare bones actor framework in pure rust
+Whirl -- A truly chaotic and absolutely bare bones actor framework in pure rust
 ===========================================================================
 
 Notice:
 ---------------
 This crate is **not** production ready and never will be!
 
-This was a learning project after I looked at different actor frameworks in rust and thought this is so cool - I need to try to implement this myself.
+This was a learning project I started after I looked at different actor frameworks in rust and thought this is so cool - I need to try to implement this myself.
 
 The only reason this is online is as reference material for my website and as part of my (also not production ready) webserver project.
+
+If you're looking for a more sophisticated alternative consider `kameo <https://github.com/tqwewe/kameo>`_ or `ractor <https://github.com/slawlor/ractor>`_.
 
 
 
