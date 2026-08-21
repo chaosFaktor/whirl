@@ -1,0 +1,25 @@
+WHITESPACE = _{ " " | "\t" | "\r" | "\n" }
+line_comment = { "//" ~ (!NEWLINE ~ ANY)* }
+
+program    = { SOI ~ decl* ~ EOI }
+
+decl       = { actor_decl
+          | handle_decl
+          }
+
+
+derive_decl = {ident ~ "derive" ~ (ident ~ ",")+}
+
+actor_decl   = { access_specifier_public? ~ ("actor"|"act"|"a") ~ ident ~ ";" }
+access_specifier_public = { "pub" | "public" }
+
+
+handle_decl  = {
+ident ~ "handle" ~ ident ~
+("(" ~ "&mut " ~ "self" ~ "," ~ "msg" ~ ")")? ~ "->" ~ ident ~
+rust_like  ~ ";"?
+}
+
+rust_like  = { ( ANY* )}
+
+ident      = @{ (ASCII_ALPHANUMERIC | "_")+ }
